@@ -5,11 +5,11 @@ export const helloWorld = inngest.createFunction(
   { event: "test/hello.world" },
   async ({ event, step }) => {
     // Imagine this is a download step
-    await step.sleep("wait-a-moment", "30s");
+    await step.sleep("wait-a-moment-download", "30s");
     // Imagine this is a transcript step
-    await step.sleep("wait-a-moment", "10s");
+    await step.sleep("wait-a-moment-transcript", "10s");
     // Imagine this is a summary step
-    await step.sleep("wait-a-moment", "5s");
+    await step.sleep("wait-a-moment-summary", "5s");
     return { message: `Hello ${event.data.email}!` };
   }
 );
