@@ -1,0 +1,17 @@
+# This is a config for E2B sandbox template.
+# You can use template ID (ng2srnbi1j3dkskc7a3b) or template name (blueprint-nextjs-test-2) to create a sandbox:
+
+# Python SDK
+# from e2b import Sandbox, AsyncSandbox
+# sandbox = Sandbox.create("blueprint-nextjs-test-2") # Sync sandbox
+# sandbox = await AsyncSandbox.create("blueprint-nextjs-test-2") # Async sandbox
+
+# JS SDK
+# import { Sandbox } from 'e2b'
+# const sandbox = await Sandbox.create('blueprint-nextjs-test-2')
+
+team_id = "30000921-fe82-4991-8d0e-c8c3f9a07429"
+start_cmd = "/compile_page.sh"
+dockerfile = "e2b.Dockerfile"
+template_name = "blueprint-nextjs-test-2"
+template_id = "ng2srnbi1j3dkskc7a3b"
