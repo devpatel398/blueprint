@@ -11,7 +11,7 @@ const Page = () => {
   const [value, setValue] = useState("");
 
   const trpc = useTRPC();
-  const { data: message } = useQuery(trpc.messages.getMany.queryOptions());
+  const { data: messages } = useQuery(trpc.messages.getMany.queryOptions());
   const createMessage = useMutation(
     trpc.messages.create.mutationOptions({
       onSuccess: () => {
@@ -29,7 +29,7 @@ const Page = () => {
       >
         Invoke Background Job
       </Button>
-      {JSON.stringify(message, null, 2)}
+      {JSON.stringify(messages, null, 2)}
     </div>
   );
 };
